@@ -23,8 +23,6 @@ void searchCells(int currX,int currY, long long& res)
 	res++;
     visited.insert({currX,currY});
     searchCells(currX,currY+1,res);
-    searchCells(currX,currY-1,res);
-    searchCells(currX-1,currY,res);
     searchCells(currX+1,currY,res);
     return;
 }
